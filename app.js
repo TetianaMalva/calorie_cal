@@ -170,8 +170,6 @@ const UICtrl = (function(){
     }
 })();
 
-
-
 // App Controller
 const App = (function(ItemCtrl, UICtrl){
     // Load event listeners
@@ -182,8 +180,9 @@ const App = (function(ItemCtrl, UICtrl){
         // Add item event
         document.querySelector(UISelectors.addBtn).addEventListener('click', itemAddSubmit);
 
-        // Edit icon click event 
-        document.querySelector(UISelectors.itemList).addEventListener('click', itemUpdateSubmit);
+       // Edit icon click event 
+       document.querySelector(UISelectors.itemList).addEventListener('click', itemUpdateSubmit);
+        
     }
 
     // Add item submit
